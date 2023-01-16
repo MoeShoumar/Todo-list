@@ -5,18 +5,20 @@ if (input === "new") {
     myArray.push(addTodo);
 }
 else if (input === "list") {
-    myArray.
-}
+    for (let element of myArray) {
+        console.log(element);
+    }
 else if (input === "delete") {
-    deleteIndex = prompt("enter the index of todo to delete")
-    myArray.pop(deleteIndex);
-}
-else if (input === "quit") {
-    break;
-}
-else {
-    "Please, enter a valid command"
-}
+        deleteIndex = prompt("enter the index of todo to delete")
+        for (let index of )
+            myArray.pop(deleteIndex);
+    }
+    else if (input === "quit") {
+        break;
+    }
+    else {
+        "Please, enter a valid command"
+    }
 
 
 
