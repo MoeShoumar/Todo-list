@@ -4,26 +4,24 @@ while (input !== 'quit') {
     if (input === "new") {
         addTodo = prompt("Enter new Todo");
         myArray.push(addTodo);
-        console.log()
+        console.log(`${addTodo} added to the list `)
     }
     else if (input === "list") {
-        for (let element of myArray)
-            console.log(`element: ${myArray[element]}`);
+        for (let [index, element] of myArray.entries()) {
+            console.log(`${index}, ${element}`);
+        }
     }
-    //else if (input === "delete") {
-    //deleteIndex = prompt("enter the index of todo to delete")
-    //for (let index of )
-    //myArray.pop(deleteIndex);
-    //}
+    else if (input === "delete") {
+        deleteIndex = prompt("enter the index of todo to delete")
+        myArray.splice(deleteIndex, 1);
+    }
     else if (input === "quit") break;
+
     else {
         "Please, enter a valid command";
     }
 }
+input = prompt("What would you do?")
 
-if (input === quit) {
-    console.log("You quit")
-}
-else {
 
-}
+console.log('OK quit the app')
